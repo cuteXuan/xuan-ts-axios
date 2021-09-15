@@ -60,7 +60,9 @@ import axios from '../../src/index'
 //     bar: 'baz'
 //   }
 // })
-//
+
+// POST
+
 // axios({
 //   method: 'post',
 //   url: '/base/post',
@@ -69,7 +71,15 @@ import axios from '../../src/index'
 //     b: 2
 //   }
 // })
-//
+
+const arr = new Int32Array([21, 31])
+
+// axios({
+//   method: 'post',
+//   url: '/base/buffer',
+//   data: arr
+// })
+
 // axios({
 //   method: 'post',
 //   url: '/base/post',
@@ -81,15 +91,19 @@ import axios from '../../src/index'
 //     b: 2
 //   }
 // })
-//
-// const arr = new Int32Array([21, 31])
-//
+
 // axios({
 //   method: 'post',
-//   url: '/base/buffer',
-//   data: arr
+//   url: '/base/post',
+//   headers: {
+//     'content-type': 'application/json',
+//     'Accept': 'aprlication/json,text/plain,*/*'
+//   },
+//   data: {
+//     a: 1,
+//     b: 1
+//   }
 // })
-//
 //
 // const paramsString = 'q=URLUtils.searchParams&topic=api'
 // const searchParams = new URLSearchParams(paramsString)
@@ -122,3 +136,4 @@ axios({
 }).then((res) => {
   console.log(res)
 })
+
