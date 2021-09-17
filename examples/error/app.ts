@@ -1,4 +1,4 @@
-import axios, { AxiosError } from '../../src/axios'
+import axios, { AxiosError } from '../../src/index'
 
 // 模拟404
 // axios({
